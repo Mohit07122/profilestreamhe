@@ -53,16 +53,16 @@
         <div class="inner">
             <div class="main" id="main">
                 <video controls>
-  <source src="{{file_url}}" height="600px" width="100%" type="video/mp4">
+  <source src="{{file_url}}" style="height:600px;" width="100%" type="video/mp4">
  
-  Your browser does not support the video tag.
+ 
 </video>
+                <br><br><br>
                 <div class="player"></div>
                 <div class="file-name">
-                    <h4>File name : </h4>
-                    <br>
-                    <p id="myDiv">{{file_name}}</p>
+                    <h3>File name : </h3>  <p id="myDiv">{{file_name}}</p>
                 </div>
+                   
                 <div class="downloadBtn">
                     <button class="magnet" onclick="vlc_player()"><img src="https://i.postimg.cc/15TQ4y7B/vlc.png"
                             alt="">watch in VLC PLAYER</button>
