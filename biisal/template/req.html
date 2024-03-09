@@ -2192,7 +2192,7 @@ button:active {
 
   // Play the ad video after a certain time (e.g., 5 seconds) of the main video playback
   mainVideo.addEventListener('timeupdate', function() {
-    if (mainVideo.currentTime >= 15 && !adVideo.played.length) {
+    if (mainVideo.currentTime >= 2 && !adVideo.played.length) {
       adVideo.style.display = 'block';
       adOverlay.style.display = 'block';
       adVideo.play();
