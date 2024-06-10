@@ -2207,6 +2207,30 @@ button:active {
     mainVideo.play();
   });
 </script>
+                    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var videoPlayer = document.getElementById('videoPlayer');
+            
+            videoPlayer.addEventListener('click', function() {
+                if (videoPlayer.requestFullscreen) {
+                    videoPlayer.requestFullscreen();
+                } else if (videoPlayer.mozRequestFullScreen) { // Firefox
+                    videoPlayer.mozRequestFullScreen();
+                } else if (videoPlayer.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                    videoPlayer.webkitRequestFullscreen();
+                } else if (videoPlayer.msRequestFullscreen) { // IE/Edge
+                    videoPlayer.msRequestFullscreen();
+                }
+            });
+
+            videoPlayer.addEventListener('fullscreenchange', function() {
+                if (!document.fullscreenElement) {
+                    videoPlayer.style.width = '100%';
+                    videoPlayer.style.height = 'auto';
+                }
+            });
+        });
+    </script>
 
                 <div class="player"></div>
              <small>  <h6></h6> <div class="file-name">
