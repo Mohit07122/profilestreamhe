@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 bot_name = "Filetolinkextraprobot"
-bisal_channel = "https://telegram.me/bisal_files"
-bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
+bisal_channel = "https://telegram.me/Filetolinkextraprobot"
+bisal_grp = "Filetolinkextraprobot"
 
 class Var(object):
     MULTI_CLIENT = False
