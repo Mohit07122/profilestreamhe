@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-bot_name = "Bɪɪsᴀʟ Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
+bot_name = "Filetolinkextraprobot"
 bisal_channel = "https://telegram.me/bisal_files"
 bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
 
@@ -15,13 +15,13 @@ class Var(object):
     API_ID = int(getenv('API_ID', '27466151'))
     API_HASH = str(getenv('API_HASH', '4d061d45ffd076cfc146a8aa46f0eba7'))
     BOT_TOKEN = str(getenv('BOT_TOKEN' , '6758835575:AAEn8a-dt07VnVEbT6xf6Q8e3Z2taEx8rrM'))
-    name = str(getenv('name', 'bisal_file2link_bot'))
+    name = str(getenv('name', 'Filetolinkextraprobot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001798208356'))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001798208356'))
     PORT = int(getenv('PORT', '8080'))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '95.216.97.247'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "5397984467").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
@@ -41,6 +41,6 @@ class Var(object):
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Streambotkelie:qfyseffJVehrsqnC@cluster0.a6d5psf.mongodb.net/?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'BHOOTBAZAR')) 
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
-    BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001798208356")).split()))   
+    BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1001798208356")).split()))   
     BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.Pʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ @biisal_bot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
